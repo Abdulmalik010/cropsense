@@ -1,0 +1,89 @@
+{
+  "model_name": "mobilenetv3_small_100",
+  "classes": [
+    {
+      "id": "Tomato___Early_blight",
+      "display": "Tomato Early Blight",
+      "crop": "tomato",
+      "kb_file": "tomato-early-blight.md"
+    },
+    {
+      "id": "Tomato___Late_blight",
+      "display": "Tomato Late Blight",
+      "crop": "tomato",
+      "kb_file": "tomato-late-blight.md"
+    },
+    {
+      "id": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "display": "Tomato Yellow Leaf Curl Virus",
+      "crop": "tomato",
+      "kb_file": "tomato-leaf-curl.md"
+    },
+    {
+      "id": "Tomato___healthy",
+      "display": "Tomato (healthy)",
+      "crop": "tomato",
+      "kb_file": "tomato-healthy.md"
+    },
+    {
+      "id": "Maize___Northern_Leaf_Blight",
+      "display": "Maize Northern Leaf Blight",
+      "crop": "maize",
+      "kb_file": "maize-northern-leaf-blight.md"
+    },
+    {
+      "id": "Maize___Common_rust",
+      "display": "Maize Common Rust",
+      "crop": "maize",
+      "kb_file": "maize-common-rust.md"
+    },
+    {
+      "id": "Maize___Gray_leaf_spot",
+      "display": "Maize Gray Leaf Spot",
+      "crop": "maize",
+      "kb_file": "maize-gray-leaf-spot.md"
+    },
+    {
+      "id": "Maize___healthy",
+      "display": "Maize (healthy)",
+      "crop": "maize",
+      "kb_file": "maize-healthy.md"
+    },
+    {
+      "id": "Cassava___mosaic_disease",
+      "display": "Cassava Mosaic Disease",
+      "crop": "cassava",
+      "kb_file": "cassava-mosaic.md"
+    },
+    {
+      "id": "Cassava___brown_streak_disease",
+      "display": "Cassava Brown Streak Disease",
+      "crop": "cassava",
+      "kb_file": "cassava-brown-streak.md"
+    },
+    {
+      "id": "Cassava___bacterial_blight",
+      "display": "Cassava Bacterial Blight",
+      "crop": "cassava",
+      "kb_file": "cassava-bacterial-blight.md"
+    },
+    {
+      "id": "Cassava___healthy",
+      "display": "Cassava (healthy)",
+      "crop": "cassava",
+      "kb_file": "cassava-healthy.md"
+    },
+    {
+      "id": "Pepper___Bacterial_spot",
+      "display": "Pepper Bacterial Spot",
+      "crop": "pepper",
+      "kb_file": "pepper-bacterial-spot.md"
+    },
+    {
+      "id": "Pepper___healthy",
+      "display": "Pepper (healthy)",
+      "crop": "pepper",
+      "kb_file": "pepper-healthy.md"
+    }
+  ]
+}

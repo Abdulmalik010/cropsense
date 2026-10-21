@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CropSense — crop disease advisor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <p class="eyebrow">Open source · Nigeria</p>
+        <h1>CropSense</h1>
+        <p class="lede">
+          Photograph a sick leaf. Get a likely disease name and short advice in
+          your language. This is decision support, not a farm officer.
+        </p>
+      </header>
+
+      <form id="diagnose-form" class="card">
+        <label class="field">
+          <span>Language for advice</span>
+          <select id="language" name="language" required>
+            {% for code, name in languages.items() %}
+            <option value="{{ code }}" {% if code == 'en' %}selected{% endif %}>
+              {{ name }}
+            </option>
+            {% endfor %}
+          </select>
+        </label>
+
+        <label class="dropzone">
+          <input
+            id="image"
+            name="image"
+            type="file"
+            accept="image/*"
+            capture="environment"
+            required
+          />
+          <span class="dropzone-title">Take or upload a leaf photo</span>
+          <span class="dropzone-hint">Use good light. One leaf. Close up.</span>
+        </label>
+
+        <img id="preview" class="preview hidden" alt="Selected leaf preview" />
+
+        <button id="submit-btn" type="submit">Get advice</button>
+      </form>
+
+      <p id="status-line" class="status" hidden></p>
+
+      <section id="result" class="card result hidden" aria-live="polite"></section>
+    </main>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>
